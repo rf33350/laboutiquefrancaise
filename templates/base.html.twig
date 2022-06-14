@@ -10,7 +10,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/boutiquefrancaise.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/boutiquefrancaise.css') }}">
 
     <style>
         .bd-placeholder-img {
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Nos produits</a>
+                    <a class="nav-link" href="{{ path('products') }}">Nos produits</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Qui sommes nous</a>
@@ -56,6 +56,7 @@
                 {% else %}
                     <a href="{{ path('app_login') }}">Connexion </a>|<a href="{{ path('app_register') }}"> Inscription</a>
                 {% endif %}
+                <a href="{{ path('cart') }}"><img src="{{ asset('assets/img/shopping-cart.png') }}" alt="Mon panier" class="cart-icon"></a>
             </div>
         </div>
     </nav>
