@@ -14,25 +14,33 @@
                 {% include 'product/single_product.html.twig' %}
             </div>
         {% endfor %}
-
     </div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Une équipe de professionnels<br><span class="text-muted">au grand savoir faire.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="{{ asset('assets/img/first.jpg') }}" class="img-fluid" alt="Un savoir faire francais.">
+        </div>
+    </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-        {% for product in products %}
-            <div class="col-md-4">
-                {% include 'product/single_product.html.twig' %}
-            </div>
-        {% endfor %}
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Venez à notre rencontre dans nos différentes<br><span class="text-muted"> boutiques partout en France.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="{{ asset('assets/img/second.jpg') }}" class="img-fluid" alt="Une boutique ouverte toute l'année.">
+        </div>
     </div>
-
-
-    <hr class="featurette-divider">
-
     <!-- /END THE FEATURETTES -->
 
 {% endblock %}

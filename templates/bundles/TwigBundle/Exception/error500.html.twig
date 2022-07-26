@@ -1,0 +1,13 @@
+{# templates/bundles/TwigBundle/Exception/error500.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Page introuvable Erreur 500 - La boutique francaise{% endblock %}
+
+{% block content %}
+    <div class="block-small">
+        <h2>Page introuvable</h2>
+        <p>Désolé, cette page ne semble pas être accessible pour le moment.</p>
+        <a href="{{ path('app_home') }}" class="btn btn-info">Revenir à l'accueil</a>
+    </div>
+{% endblock %}

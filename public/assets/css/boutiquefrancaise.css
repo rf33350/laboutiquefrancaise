@@ -68,3 +68,22 @@ body {
      padding: 20px;
      margin-top: 22px;
  }
+
+.account-item {
+    background-color: #f1f2f6;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px lightblue;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.account-item a {
+    color: #4b6584;
+    font-weight: bold;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+.account-item a:hover {
+    color: #778ca3;
+}
